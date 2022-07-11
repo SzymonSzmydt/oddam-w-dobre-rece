@@ -1,0 +1,20 @@
+.home__header {
+    display: flex;
+    width: 50vw;
+}
+
+.box-top {
+    display: flex;
+    justify-content: flex-end;
+
+    width: 100%;
+    margin: 3rem 9rem 2.25rem 0;
+
+    font-size: 0.875rem;
+    color: #737373;
+    text-align: right;
+}
+
+.box-top > div {
+    margin-left: 2rem;
+}

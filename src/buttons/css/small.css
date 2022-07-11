@@ -1,0 +1,15 @@
+.btn {
+    cursor: pointer;
+
+    padding: 0.5rem 1rem;
+
+    font-size: 1.125rem;
+    color: #3C3C3C;
+
+    border: 1px solid transparent;
+}
+
+.btn:hover {
+    border: 1px solid #3C3C3C;
+}
+
