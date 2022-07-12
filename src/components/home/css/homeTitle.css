@@ -1,0 +1,24 @@
+.home__title {
+    display: flex;
+
+    margin-top: 13.6875rem;
+}
+
+.title-text {
+    text-align: center;
+    font-size: 2.375rem;
+    color: #3C3C3C;
+    letter-spacing: -0.76px;
+    line-height: 1rem;
+}
+
+.decoration {
+    width: 253px;
+    height: 33px;
+
+    margin: 1.5625rem auto;
+
+    background-image: url("/./public/assets/Decoration.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}

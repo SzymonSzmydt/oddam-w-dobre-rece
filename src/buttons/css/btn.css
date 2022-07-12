@@ -1,0 +1,32 @@
+.btn {
+    cursor: pointer;
+    color: #3C3C3C;
+    border: 1px solid transparent;
+}
+
+.btn:hover {
+    border: 1px solid #3C3C3C;
+}
+
+.small {
+    font-size: 1.125rem;
+    padding: 0.5rem 1rem;
+}
+
+.big {
+    text-align: center;
+    font-size: 2.25rem;
+    font-weight: 300;
+
+    padding: 1rem 1.5rem;
+    margin: 4.0625rem 2.75rem;
+
+    max-width: 15rem;
+
+    border: 1px solid #3C3C3C;
+}
+
+.big:hover {
+    background-color: #F0F1F1;
+}
+

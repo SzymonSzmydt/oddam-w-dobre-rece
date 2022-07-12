@@ -6,8 +6,6 @@
     width: 50vw;
     height: 1000px;
 
-    border: 1px solid red;
-
     background-image: url("/public/assets/Hero Image.png");
     background-repeat: no-repeat;
     background-position: -32rem;

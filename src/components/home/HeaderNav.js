@@ -1,15 +1,15 @@
 import "./css/headerNav.css";
-import {Small} from "../../buttons/Small";
+import {SmallBtn} from "../../buttons/SmallBtn";
 
 export function HeaderNav() {
 
     return (
         <div className="headerNav">
-            <Small name={"Start"} />
-            <Small name={"O co chodzi?"} />
-            <Small name={"O nas"} />
-            <Small name={"Fundacja i organizacje"} />
-            <Small name={"Kontakt"} />
+            <SmallBtn name={"Start"} />
+            <SmallBtn name={"O co chodzi?"} />
+            <SmallBtn name={"O nas"} />
+            <SmallBtn name={"Fundacja i organizacje"} />
+            <SmallBtn name={"Kontakt"} />
         </div>
     )
 }
