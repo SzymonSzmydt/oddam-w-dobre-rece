@@ -1,5 +1,5 @@
-import "./css/headerNav.css";
-import {SmallBtn} from "../../buttons/SmallBtn";
+import "../css/headerNav.css";
+import {SmallBtn} from "../../../buttons/SmallBtn";
 
 export function HeaderNav() {
 

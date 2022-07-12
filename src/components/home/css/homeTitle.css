@@ -18,7 +18,7 @@
 
     margin: 1.5625rem auto;
 
-    background-image: url("/./public/assets/Decoration.png");
+    background-image: url("/public/assets/Decoration.png");
     background-repeat: no-repeat;
     background-size: cover;
 }

@@ -1,0 +1,39 @@
+.threeColumns {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    width: 100%;
+
+    background-image: url("/public/assets/3 Columns Background.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.column {
+    text-align: center;
+}
+
+.column-stats {
+    margin: 2.85rem 0 0 0;
+
+    font-weight: 300;
+    font-size: 5.625rem;
+    color: #5E5322;
+}
+
+.column-title {
+    text-transform: uppercase;
+    font-size: 1.125rem;
+    letter-spacing: -0.36px;
+    color: #3C3C3C;
+}
+
+.column-text {
+    width: 20.875rem;
+    margin: 1.85rem 0 5.375rem 0;
+
+    font-weight: 300;
+    font-size: 1rem;
+    color: #3C3C3C;
+}

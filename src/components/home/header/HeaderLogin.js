@@ -1,4 +1,4 @@
-import "./css/headerLogin.css";
+import "../css/headerLogin.css";
 import {Link} from "react-router-dom";
 
 export function HeaderLogin() {

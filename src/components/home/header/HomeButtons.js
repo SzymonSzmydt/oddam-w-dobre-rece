@@ -1,5 +1,5 @@
-import "./css/homeButtons.css";
-import {BigBtn} from "../../buttons/BigBtn";
+import "../css/homeButtons.css";
+import {BigBtn} from "../../../buttons/BigBtn";
 
 export function HomeButtons() {
 
