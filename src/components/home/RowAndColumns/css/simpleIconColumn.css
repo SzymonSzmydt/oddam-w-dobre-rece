@@ -1,0 +1,40 @@
+.simple-column {
+    text-align: center;
+
+    width: 11rem;
+    margin: 0 3rem;
+}
+
+.simple-icon {
+    background-size: contain;
+    background-repeat: no-repeat;
+
+    width: 82px;
+    height: 82px;
+    margin: 0 auto;
+}
+
+.simple-title {
+    font-size: 1.15rem;
+    color: #3C3C3C;
+}
+
+.simple-text::before {
+    position: absolute;
+
+    content: '';
+    top: -0.5rem;
+    left: 2.85rem;
+    right: 2.85rem;
+
+    border: 1px solid #CACACA;
+}
+
+.simple-text {
+    position: relative;
+
+    font-size: 1rem;
+    color: #3C3C3C;
+
+    white-space: pre-wrap;
+}

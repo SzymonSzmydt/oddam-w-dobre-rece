@@ -1,25 +1,28 @@
-.btn {
+.small {
     cursor: pointer;
+    font-size: 1.125rem;
+    padding: 0.5rem 1rem;
     color: #3C3C3C;
     border: 1px solid transparent;
 }
 
-.btn:hover {
+.small:hover {
     border: 1px solid #3C3C3C;
 }
 
-.small {
-    font-size: 1.125rem;
-    padding: 0.5rem 1rem;
-}
-
 .big {
+    cursor: pointer;
+
+    white-space: pre-wrap;
+    text-transform: uppercase;
+
     text-align: center;
     font-size: 2.25rem;
     font-weight: 300;
+    color: #3C3C3C;
 
     padding: 1rem 1.5rem;
-    margin: 4.0625rem 2.75rem;
+    margin: 4.0625rem;
 
     max-width: 15rem;
 
@@ -28,5 +31,6 @@
 
 .big:hover {
     background-color: #F0F1F1;
+    border: 1px solid #3C3C3C;
 }
 

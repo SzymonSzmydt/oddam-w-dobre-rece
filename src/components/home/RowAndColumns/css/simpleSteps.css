@@ -2,7 +2,7 @@
     margin: 0 auto;
 }
 
-.rowTitle {
+.simpleSteps-Title {
     margin-top: 3.4375rem;
 
     font-size: 2.375rem;
@@ -11,10 +11,27 @@
     text-align: center;
 }
 
-.rowTitle-img {
+.simpleSteps-img {
     height: 33px;
+
     background-image: url("/public/assets/Decoration.png");
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;
+}
+
+.simpleSteps-icons {
+    display: flex;
+    justify-content: center;
+
+    padding: 4.5rem 0;
+    margin-top: 2rem;
+    background-color: #F0F1F1;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+
+    margin: -1.75rem 0 -4.25rem;
 }

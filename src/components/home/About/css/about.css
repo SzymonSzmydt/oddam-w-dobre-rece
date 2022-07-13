@@ -1,0 +1,48 @@
+.about {
+    display: flex;
+
+    margin-top: 5rem;
+
+    background-color: #F0F1F1;
+}
+
+.about-left {
+    width: 50%;
+}
+
+.about-title {
+    padding: 11.625rem 0 0;
+}
+
+.about-text {
+    display: flex;
+    flex-direction: column;
+    width: 38rem;
+    margin: 3.15rem auto;
+
+    letter-spacing: -0.6px;
+    color: #3C3C3C;
+    font-size: 1.875rem;
+    text-align: center;
+    line-height: 3.25rem;
+}
+
+.about-signature {
+    align-self: flex-end;
+    width: 13.125rem;
+    height: 9rem;
+    margin: 2.15rem 0;
+
+    background-image: url("/public/assets/Signature.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.about-right {
+    width: 50%;
+
+    background-image: url("/public/assets/People.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: right;
+}

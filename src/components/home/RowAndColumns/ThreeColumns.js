@@ -1,13 +1,13 @@
 import "./css/Stats.css";
 import {Stats} from "./Stats";
-import {RowTitle} from "./RowTitle";
+import {SimpleSteps} from "./SimpleSteps";
 
 export function ThreeColumns() {
 
     return (
         <>
             <Stats/>
-            <RowTitle/>
+            <SimpleSteps/>
         </>
     )
 }

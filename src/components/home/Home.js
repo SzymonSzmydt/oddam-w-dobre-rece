@@ -1,6 +1,7 @@
 import "./css/home.css";
 import {HomeRight} from "./header/HomeRight";
 import {ThreeColumns} from "./RowAndColumns/ThreeColumns";
+import {About} from "./About/About";
 
 export function Home() {
 
@@ -11,6 +12,7 @@ export function Home() {
                 <HomeRight/>
             </div>
             <ThreeColumns/>
+            <About/>
         </div>
     )
 }
