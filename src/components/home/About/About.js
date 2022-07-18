@@ -1,12 +1,14 @@
 import "./css/about.css";
+import { Ornament } from './../../Ornament';
 
 export function About() {
 
     return (
-        <div className="about">
+        <div className="about" id="about">
             <div className="about-left">
-                <p className="simpleSteps-Title about-title"> O nas </p>
-                <div className="simpleSteps-img"/>
+                <div className="about-title">
+                    <Ornament title="O nas"/>
+                </div>
                 <div className="about-text">
                     Nori grape silver beet broccoli kombu
                     beet greens fava bean potato quandong

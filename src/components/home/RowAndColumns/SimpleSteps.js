@@ -2,6 +2,7 @@ import "./css/simpleSteps.css";
 import {SimpleIconColumn} from "./SimpleIconColumn";
 import {BigBtn} from "../../../buttons/BigBtn";
 import {useNavigate} from "react-router-dom"
+import { Ornament } from './../../Ornament';
 
 export function SimpleSteps() {
     const navigate = useNavigate();
@@ -23,8 +24,7 @@ export function SimpleSteps() {
 
     return (
         <div className="threeColumns" id="whats_about">
-            <p className="simpleSteps-Title"> Wystarczą 4 proste kroki </p>
-            <div className="simpleSteps-img"/>
+            <Ornament title="Wystarczą 4 proste kroki"/>
             <div className="simpleSteps-icons">
                 <SimpleIconColumn img={icon1} title={title1} text={text1}/>
                 <SimpleIconColumn img={icon2} title={title2} text={text2}/>

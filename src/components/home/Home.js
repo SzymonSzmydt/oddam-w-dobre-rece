@@ -1,7 +1,8 @@
 import "./css/home.css";
-import {HomeRight} from "./header/HomeRight";
-import {ThreeColumns} from "./RowAndColumns/ThreeColumns";
-import {About} from "./About/About";
+import { HomeRight } from "./header/HomeRight";
+import { ThreeColumns } from "./RowAndColumns/ThreeColumns";
+import { About } from "./About/About";
+import { Organisations } from "./Organisations/Organisations";
 
 export function Home() {
 
@@ -13,6 +14,7 @@ export function Home() {
             </div>
             <ThreeColumns/>
             <About/>
+            <Organisations/>
         </div>
     )
 }

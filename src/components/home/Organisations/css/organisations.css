@@ -1,0 +1,20 @@
+.organisations {
+    padding-top: 2rem;
+
+    text-align: center;
+}
+
+.help {
+    display: flex;
+    justify-content: center;
+
+    padding: 4rem;
+}
+
+.organisations-text {
+    max-width: 29rem;
+    margin: 0 auto 4rem;
+
+    font-size: 1.375;
+    color: #3C3C3C;
+}
