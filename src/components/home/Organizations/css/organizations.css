@@ -1,0 +1,50 @@
+.organizations {
+    padding: 2rem 0 5.8125rem;
+
+    text-align: center;
+}
+
+.help {
+    display: flex;
+    justify-content: center;
+
+    padding: 4rem;
+}
+
+.organizations-text {
+    max-width: 29rem;
+    margin: 0 auto 4rem;
+
+    font-size: 1.375;
+    color: #3C3C3C;
+}
+
+.org-list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    margin: 1.75rem 9rem;
+    
+    color: #3C3C3C;
+    font-family: 'Merriweather', serif;
+    font-weight: 300;
+
+    border-bottom: 1px solid #3C3C3C;
+}
+
+.org-title {
+    text-align: left;
+    font-size: 1.625rem;
+    margin: 0;
+}
+
+.org-text {
+    font-size: 1.125rem;
+    margin: 0 0 1.75rem;
+}
+
+.pages {
+    display: flex;
+    justify-content: center;
+}

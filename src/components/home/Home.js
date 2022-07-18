@@ -2,7 +2,7 @@ import "./css/home.css";
 import { HomeRight } from "./header/HomeRight";
 import { ThreeColumns } from "./RowAndColumns/ThreeColumns";
 import { About } from "./About/About";
-import { Organisations } from "./Organisations/Organisations";
+import { Organizations } from "./Organizations/Organizations";
 
 export function Home() {
 
@@ -14,7 +14,7 @@ export function Home() {
             </div>
             <ThreeColumns/>
             <About/>
-            <Organisations/>
+            <Organizations/>
         </div>
     )
 }
