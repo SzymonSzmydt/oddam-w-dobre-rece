@@ -122,7 +122,7 @@ export function Organizations() {
     return (
         <div className="organizations">
             <Ornament title="Komu pomagamy?"/>
-            <div className="help">
+            <div className="help small-help">
                 <SmallBtn name="Fundacjom" onClick={()=> setTodos(fundations)}/>
                 <SmallBtn name="Organizacją pozarządowym" onClick={()=> setTodos(org)}/>
                 <SmallBtn name="Lokalnym zbiórkom" onClick={()=> setTodos(local)}/>

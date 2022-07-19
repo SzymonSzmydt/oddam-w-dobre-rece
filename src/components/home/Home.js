@@ -1,4 +1,4 @@
-import "./css/home.css";
+import "./header/css/home.css";
 import { HomeRight } from "./header/HomeRight";
 import { ThreeColumns } from "./RowAndColumns/ThreeColumns";
 import { About } from "./About/About";

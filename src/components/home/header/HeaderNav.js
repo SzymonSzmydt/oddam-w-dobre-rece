@@ -1,4 +1,4 @@
-import "../css/headerNav.css";
+import "./css/headerNav.css";
 import {Link} from "react-scroll";
 
 export function HeaderNav() {
@@ -10,7 +10,7 @@ export function HeaderNav() {
                 spy={true}
                 smooth={true}
                 duration={500}
-                className="bnt small"
+                className="bnt small small-nav"
             > Start </Link>
             <Link
                 to="whats_about"
@@ -18,7 +18,7 @@ export function HeaderNav() {
                 smooth={true}
                 duration={500}
                 cursor="pointer"
-                className="bnt small"
+                className="bnt small small-nav"
             > O co chodzi? </Link>
             <Link
                 to="about"
@@ -26,7 +26,7 @@ export function HeaderNav() {
                 smooth={true}
                 duration={500}
                 cursor="pointer"
-                className="bnt small"
+                className="bnt small small-nav"
             > O nas </Link>
             <Link
                 to="org"
@@ -34,7 +34,7 @@ export function HeaderNav() {
                 smooth={true}
                 duration={500}
                 cursor="pointer"
-                className="bnt small"
+                className="bnt small small-nav"
             > Fundacja i organizacje </Link>
             <Link
                 to="kontakt"
@@ -42,7 +42,7 @@ export function HeaderNav() {
                 smooth={true}
                 duration={500}
                 cursor="pointer"
-                className="bnt small"
+                className="bnt small small-nav"
             > Kontakt </Link>
         </div>
     )

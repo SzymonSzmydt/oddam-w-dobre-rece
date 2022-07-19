@@ -3,7 +3,6 @@
     align-items: center;
     
     cursor: pointer;
-    font-size: 1.5rem;
     color: #3C3C3C;
     text-align: center;
 
@@ -11,6 +10,14 @@
     max-width: 12rem;
 
     border: 1px solid transparent;
+}
+
+.small-nav {
+    font-size: 1.125rem;
+}
+
+.small-help {
+    font-size: 1.5rem;
 }
 
 .small:hover {
