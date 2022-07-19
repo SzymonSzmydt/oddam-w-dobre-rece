@@ -9,14 +9,14 @@ export function HeaderNav() {
                 to="/"
                 spy={true}
                 smooth={true}
-                duration={500}
+                duration={700}
                 className="bnt small small-nav"
             > Start </Link>
             <Link
                 to="whats_about"
                 spy={true}
                 smooth={true}
-                duration={500}
+                duration={700}
                 cursor="pointer"
                 className="bnt small small-nav"
             > O co chodzi? </Link>
@@ -24,7 +24,7 @@ export function HeaderNav() {
                 to="about"
                 spy={true}
                 smooth={true}
-                duration={500}
+                duration={700}
                 cursor="pointer"
                 className="bnt small small-nav"
             > O nas </Link>
@@ -32,15 +32,15 @@ export function HeaderNav() {
                 to="org"
                 spy={true}
                 smooth={true}
-                duration={500}
+                duration={700}
                 cursor="pointer"
                 className="bnt small small-nav"
             > Fundacja i organizacje </Link>
             <Link
-                to="kontakt"
+                to="contact"
                 spy={true}
                 smooth={true}
-                duration={500}
+                duration={700}
                 cursor="pointer"
                 className="bnt small small-nav"
             > Kontakt </Link>

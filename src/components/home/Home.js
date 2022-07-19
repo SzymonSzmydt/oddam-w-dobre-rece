@@ -3,6 +3,7 @@ import { HomeRight } from "./header/HomeRight";
 import { ThreeColumns } from "./RowAndColumns/ThreeColumns";
 import { About } from "./About/About";
 import { Organizations } from "./Organizations/Organizations";
+import { Contact } from "./Contact/Contact";
 
 export function Home() {
 
@@ -15,6 +16,7 @@ export function Home() {
             <ThreeColumns/>
             <About/>
             <Organizations/>
+            <Contact/>
         </div>
     )
 }

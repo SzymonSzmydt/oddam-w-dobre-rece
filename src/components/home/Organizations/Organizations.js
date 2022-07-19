@@ -116,11 +116,10 @@ export function Organizations() {
     const renderPageNumbers = pageNumbers.map(number => 
     <SmallBtn key={number} name={number} onClick={(e)=> setCurrentPage(number)}/> );
 
-    const pages = renderPageNumbers.length > 1 ? renderPageNumbers : 
-    <div style={{color: "transparent", fontSize: "1.375rem", padding: "1rem"}}>1</div>;
+    const pages = renderPageNumbers.length > 1 ? renderPageNumbers : <div/>;
 
     return (
-        <div className="organizations">
+        <div className="organizations" id="org">
             <Ornament title="Komu pomagamy?"/>
             <div className="help small-help">
                 <SmallBtn name="Fundacjom" onClick={()=> setTodos(fundations)}/>
@@ -133,14 +132,16 @@ export function Organizations() {
             incididunt ut labore et dolore magna aliqua. 
             Ut enim ad minim veniam, quis nostrud exercitation.
             </p>
-            { currentTodos.map(( e, index) => 
-                <OrganizationsList 
-                    key={index} 
-                    title={e.title} 
-                    text={e.text}
-                    address={e.address} 
-                />
-            )}
+            <div className="organizations__list-box">
+                { currentTodos.map(( e, index) => 
+                    <OrganizationsList 
+                        key={index} 
+                        title={e.title} 
+                        text={e.text}
+                        address={e.address} 
+                    />
+                )}
+            </div>
             <div className="pages">
                 { pages }
             </div>

@@ -1,0 +1,104 @@
+.contact {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    max-width: 1666px;
+    height: 900px;
+    margin: 0 auto;
+
+    background-image: linear-gradient(rgba(255, 255, 255, 0.6), 
+                                      rgba(255, 255, 255, 0.6)),
+                      url("/public/assets/Background-Contact-Form.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.contact-right {
+    width: 45%;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+
+    width: 36rem;
+    padding: 2rem;
+    margin: 3rem auto;
+
+    font-weight: 600;
+    font-size: 1rem;
+    color: #3C3C3C;
+}
+
+.contact-row {
+    display: flex;
+}
+
+.contact-row > label {
+    display: flex;
+    flex-direction: column;
+
+    padding-right: 2rem;
+}
+
+.contact-row > label > input {
+    appearance: none;
+
+    border: 0 solid;
+    border-bottom: 1px solid #3C3C3C;
+    background-color: transparent;
+
+    width: 16rem;
+    margin: 1rem 0;
+}
+
+.contact-row > label > input:focus {
+    outline: none;
+}
+
+.contact-form > label {
+    display: flex;
+    flex-direction: column;
+
+    padding: 2rem 0;
+}
+
+.contact-form > label > textarea {
+    appearance: none;
+
+    font-family: 'Open Sans', sans-serif;
+
+    border: 0 solid;
+    border-bottom: 1px solid #3C3C3C;
+    background-color: transparent;
+
+    width: 35rem;
+    height: 4.5625rem;
+    margin: 0.5rem 0;
+}
+
+.contact-form > label > textarea:focus {
+    outline: none;
+}
+
+.constact-btn {
+    display: flex;
+    justify-content: flex-end;
+
+    margin-right: 0.6rem;
+}
+
+.submit {
+    appearance: none;
+    border: 1px solid #3C3C3C;
+    background-color: transparent;
+
+    padding: 0.5rem 2rem;
+
+    font-size: 1rem;
+    font-weight: 300;
+}
+
+.submit:hover {
+    opacity: 0.5;
+}

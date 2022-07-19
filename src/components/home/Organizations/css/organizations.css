@@ -44,7 +44,13 @@
     margin: 0 0 1.75rem;
 }
 
+.organizations__list-box {
+    height: 21.5rem;
+}
+
 .pages {
     display: flex;
     justify-content: center;
+
+    height: 2.5rem;
 }
