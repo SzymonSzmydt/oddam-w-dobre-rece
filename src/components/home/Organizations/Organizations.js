@@ -118,13 +118,18 @@ export function Organizations() {
 
     const pages = renderPageNumbers.length > 1 ? renderPageNumbers : <div/>;
 
+    const handleClick = (element) => {
+        setCurrentPage(1);
+        setTodos(element);
+    };
+
     return (
         <div className="organizations" id="org">
             <Ornament title="Komu pomagamy?"/>
             <div className="help small-help">
-                <SmallBtn name="Fundacjom" onClick={()=> setTodos(fundations)}/>
-                <SmallBtn name="Organizacją pozarządowym" onClick={()=> setTodos(org)}/>
-                <SmallBtn name="Lokalnym zbiórkom" onClick={()=> setTodos(local)}/>
+                <SmallBtn name="Fundacjom" onClick={()=> handleClick(fundations)}/>
+                <SmallBtn name="Organizacją pozarządowym" onClick={()=> handleClick(org)}/>
+                <SmallBtn name="Lokalnym zbiórkom" onClick={()=> handleClick(local)}/>
             </div>
             <p className="organizations-text">
             Lorem ipsum dolor sit amet, consectetur 
