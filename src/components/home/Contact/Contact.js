@@ -9,7 +9,6 @@ export function Contact() {
     const handleChange = (e) => {
         setFormValues({ ...formValues, [e.target.name] : e.target.value });
     }
-
     const validate = (values) => {
         const errors = {};
         const regex = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/i;
@@ -19,14 +18,12 @@ export function Contact() {
 
         return errors
     }
-
     const handleSubmit = (e) => {
         e.preventDefault();
         setFormError(validate(formValues));
         console.log(formValues);
         if (!formError) {
         let url = 'https://fer-api.coderslab.pl/v1/portfolio/contact';
-        
         fetch(url, {
             method: 'POST',
             headers: {
@@ -43,7 +40,6 @@ export function Contact() {
             console.error('Error:', error);
           });
         }
-
         async function makeRequest() {
             try {
               const response = await fetch('https://fer-api.coderslab.pl/v1/portfolio/contact', {
@@ -63,7 +59,6 @@ export function Contact() {
           }       
           makeRequest();
     }
-
     return (
         <div className="contact" id="contact">
             <div className="contact-right">
