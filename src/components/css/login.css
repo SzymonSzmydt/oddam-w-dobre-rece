@@ -4,7 +4,10 @@
 
 .login__header {
     display: flex;
-    justify-content: flex-end;
+    flex-direction: column;
+    align-items: flex-end;
+
+    padding-right: 3rem;
 }
 
 .login__body {
@@ -29,13 +32,14 @@
     align-items: center;
 
     margin: 0 auto;
-    padding: 3rem 0 1rem;
+    padding: 3rem 0 2rem;
     background-color: #F0F1F1;
 }
 
 .login-row > label {
     display: flex;
     flex-direction: column;
+    padding: 0 0 1rem;
 }
 
 .login-row > label > input {
@@ -47,19 +51,12 @@
     background-color: transparent;
 
     width: 16rem;
-    margin: 1rem 0;
+
     padding:  0.5rem 0;
 }
 
 .login-row > label > input:focus {
     outline: none;
-}
-
-.login-form > label {
-    display: flex;
-    flex-direction: column;
-
-    padding: 2rem 0;
 }
 
 .login-btn {

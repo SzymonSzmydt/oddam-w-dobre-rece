@@ -11,3 +11,8 @@
     background-position: -32rem;
     background-size: cover;
 }
+
+.homeRight {
+    width: 50%;
+    padding: 0 4.5rem;
+}
