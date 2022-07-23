@@ -5,59 +5,67 @@ import { useState } from 'react';
 export function Contact() {
     const [ formValues, setFormValues ] = useState({name: '', email: '', message: ''});
     const [ formError, setFormError ] = useState({});
+    const [ correctForm, setCorrectForm ] = useState(false);
 
     const handleChange = (e) => {
         setFormValues({ ...formValues, [e.target.name] : e.target.value });
     }
     const validate = (values) => {
+      setCorrectForm(false);
         const errors = {};
         const regex = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/i;
         if (!values.name || values.name.includes(" ")) errors.name = "Podane imię jest nieprawidłowe!";
         if (!values.email || !regex.test(values.email)) errors.email = "Podany email jest nieprawidłowy!";
         if (values.message.length < 120) errors.message = "Wiadomość musi mieć conajmniej 120 znaków!";
-
+        else setCorrectForm(true);
         return errors
     }
     const handleSubmit = (e) => {
         e.preventDefault();
         setFormError(validate(formValues));
         console.log(formValues);
-        if (!formError) {
-        let url = 'https://fer-api.coderslab.pl/v1/portfolio/contact';
-        fetch(url, {
-            method: 'POST',
-            headers: {
-              'Content-Type': 'application/json',
-            },
-            body: JSON.stringify(formValues),
-          })
-          .then((response) => response.json())
-          .then((data) => {
-            console.log('Success:', data);
-          })
-          //Then with the error genereted...
-          .catch((error) => {
-            console.error('Error:', error);
-          });
-        }
-        async function makeRequest() {
-            try {
-              const response = await fetch('https://fer-api.coderslab.pl/v1/portfolio/contact', {
-                method: 'POST',
-                headers: {
-                  'Content-Type': 'application/json'
-                },
-                body: JSON.stringify(formValues)
-              });
-          
-              console.log('response.status: ', response.status);
-              console.log(response);
-          
-            } catch (err) {
-              console.log(err);
-            }
+
+        console.log("PRZED IFem ", correctForm)
+        if (correctForm) {
+
+          console.log("Wysłano");
+          console.log("PO IFie ", correctForm)
+          let url = 'https://fer-api.coderslab.pl/v1/portfolio/contact';
+            fetch(url, {
+              method: 'POST',
+              headers: {
+                'Content-Type': 'application/json',
+              },
+              body: JSON.stringify(formValues),
+            })
+            .then((response) => response.json())
+            .then((data) => {
+              console.log('Success:', data);
+            })
+            //Then with the error genereted...
+            .catch((error) => {
+              console.error('Error:', error);
+            });
+        
+          async function makeRequest() {
+              try {
+                const response = await fetch('https://fer-api.coderslab.pl/v1/portfolio/contact', {
+                  method: 'POST',
+                  headers: {
+                    'Content-Type': 'application/json'
+                  },
+                  body: JSON.stringify(formValues)
+                });
+            
+                console.log('response.status: ', response.status);
+                console.log(response);
+            
+              } catch (err) {
+                console.log(err);
+              }
           }       
           makeRequest();
+      }
     }
     return (
         <div className="contact" id="contact">
