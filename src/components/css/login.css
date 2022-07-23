@@ -11,7 +11,7 @@
 }
 
 .login__body {
-    margin: 3rem auto;
+    margin: 10rem auto;
 }
 
 .login__box {
@@ -63,4 +63,27 @@
     display: flex;
     justify-content: space-between;
     margin-top: 2rem;
+}
+
+.logout {
+    width: 26rem;
+    height: 20rem;
+    margin: 10rem auto;
+}
+
+.border {
+    padding: 1rem 1rem;
+    border: 1px solid #3C3C3C;
+}
+
+.border:hover {
+    border: 1px solid #3C6C7C;
+    color: yellowgreen;
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+
+    padding: 2rem 1.5rem 0 0;
 }
